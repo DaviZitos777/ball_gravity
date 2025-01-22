@@ -1,7 +1,6 @@
 import pygame
 import typing
 import random
-import math
 # Iniciar pygame
 pygame.init()
 # janela
