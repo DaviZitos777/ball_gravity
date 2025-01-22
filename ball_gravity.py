@@ -121,10 +121,7 @@ while running:
         # Espalha bolas ao clicar
         if event.type == pygame.MOUSEBUTTONDOWN:
             if event.button == 1 and not botao_reiniciar.rect.collidepoint(pygame.mouse.get_pos()):
-                bolas.append(Bola(list(pygame.mouse.get_pos())[0], list(pygame.mouse.get_pos())[1], random.randint(-1000, 1000), random.randint(-1000, 1000)))
-                bolas.append(Bola(list(pygame.mouse.get_pos())[0], list(pygame.mouse.get_pos())[1], random.randint(-1000, 1000), random.randint(-1000, 1000)))
-                bolas.append(Bola(list(pygame.mouse.get_pos())[0], list(pygame.mouse.get_pos())[1], random.randint(-1000, 1000), random.randint(-1000, 1000)))
-                bolas.append(Bola(list(pygame.mouse.get_pos())[0], list(pygame.mouse.get_pos())[1], random.randint(-1000, 1000), random.randint(-1000, 1000)))
+                bolas.append(Bola(list(pygame.mouse.get_pos())[0], list(pygame.mouse.get_pos())[1], 0, 0))
     # Aplica fisica a todas as bolas
     for bola in bolas:
         bola.fisica()
